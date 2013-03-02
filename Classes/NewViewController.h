@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  NewViewController.h
 //  CardLove
 //
 //  Created by FOLY on 2/23/13.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JMTabView.h"
 
-@interface MainViewController : UINavigationController <JMTabViewDelegate>
+@interface NewViewController : UIViewController
 
 @end

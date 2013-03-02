@@ -12,6 +12,7 @@
 #import "CustomBackgroundLayer.h"
 #import "CustomNoiseBackgroundView.h"
 #import "UIView+Positioning.h"
+#import "NewViewController.h"
 
 @interface MainViewController ()
 
@@ -35,6 +36,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,7 +47,7 @@
 
 -(void)addStandardTabView;
 {
-    JMTabView * tabView = [[JMTabView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 60.)] ;
+    JMTabView * tabView = [[JMTabView alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 60.)] ;
     
     [tabView setDelegate:self];
     
@@ -73,7 +75,7 @@
     UIImage * standardIcon = [UIImage imageNamed:@"icon3.png"];
     UIImage * highlightedIcon = [UIImage imageNamed:@"icon2.png"];
     
-    CustomTabItem * tabItem1 = [CustomTabItem tabItemWithTitle:@"One" icon:standardIcon alternateIcon:highlightedIcon];
+    CustomTabItem * tabItem1 = [CustomTabItem tabItemWithTitle:@"Friends" icon:standardIcon alternateIcon:highlightedIcon];
     CustomTabItem * tabItem2 = [CustomTabItem tabItemWithTitle:@"Two" icon:standardIcon alternateIcon:highlightedIcon];
     CustomTabItem * tabItem3 = [CustomTabItem tabItemWithTitle:@"Three" icon:standardIcon alternateIcon:highlightedIcon];
     CustomTabItem * tabItem4 = [CustomTabItem tabItemWithTitle:@"Four" icon:standardIcon alternateIcon:highlightedIcon];
@@ -109,6 +111,11 @@
 -(void)tabView:(JMTabView *)tabView didSelectTabAtIndex:(NSUInteger)itemIndex;
 {
     NSLog(@"Selected Tab Index: %d", itemIndex);
+    if (itemIndex == 2) {
+        NewViewController *nvc = [[NewViewController alloc] initWithNibName:@"NewViewController" bundle:nil];
+        [self pushViewController:nvc animated:YES];
+        NSLog(@"DCM");
+    }
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;

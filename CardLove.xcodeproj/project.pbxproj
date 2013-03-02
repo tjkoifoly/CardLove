@@ -44,6 +44,8 @@
 		66E3220916D912C500686B1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E3220816D912C500686B1B /* QuartzCore.framework */; };
 		66E3220B16D9180A00686B1B /* ICON.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3220A16D9180900686B1B /* ICON.png */; };
 		66E3220D16D9183300686B1B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3220C16D9183300686B1B /* icon@2x.png */; };
+		66E3221516D91EA300686B1B /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E3221316D91EA300686B1B /* NewViewController.m */; };
+		66E3221616D91EA300686B1B /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E3221416D91EA300686B1B /* NewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,9 @@
 		66E3220816D912C500686B1B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		66E3220A16D9180900686B1B /* ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICON.png; path = ../ICON.png; sourceTree = "<group>"; };
 		66E3220C16D9183300686B1B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		66E3221216D91EA300686B1B /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewViewController.h; path = Classes/NewViewController.h; sourceTree = "<group>"; };
+		66E3221316D91EA300686B1B /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewViewController.m; path = Classes/NewViewController.m; sourceTree = "<group>"; };
+		66E3221416D91EA300686B1B /* NewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewViewController.xib; path = Classes/NewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +272,9 @@
 				66E3220316D9113700686B1B /* MainViewController.h */,
 				66E3220416D9113700686B1B /* MainViewController.m */,
 				66E3220516D9113700686B1B /* MainViewController.xib */,
+				66E3221216D91EA300686B1B /* NewViewController.h */,
+				66E3221316D91EA300686B1B /* NewViewController.m */,
+				66E3221416D91EA300686B1B /* NewViewController.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -337,6 +345,7 @@
 				66E3220716D9113700686B1B /* MainViewController.xib in Resources */,
 				66E3220B16D9180A00686B1B /* ICON.png in Resources */,
 				66E3220D16D9183300686B1B /* icon@2x.png in Resources */,
+				66E3221616D91EA300686B1B /* NewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +373,7 @@
 				66E321EF16D90DBE00686B1B /* CustomSelectionView.m in Sources */,
 				66E321F016D90DBE00686B1B /* CustomTabItem.m in Sources */,
 				66E3220616D9113700686B1B /* MainViewController.m in Sources */,
+				66E3221516D91EA300686B1B /* NewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
